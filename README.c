@@ -2,7 +2,6 @@
 #include <stdio.h>
 void towerofhanoi(int num,char frompeg,char topeg,char auxpeg){
     if(num==1){
-        printf("\nMoving disc 1 from peg %c to peg %c",frompeg,topeg);
         return;
     }
     towerofhanoi(num-1,frompeg,auxpeg,topeg);
@@ -11,7 +10,6 @@ void towerofhanoi(int num,char frompeg,char topeg,char auxpeg){
 }
 int main(){
     int num;
-    scanf("%d",&num);
-    towerofhanoi(num,'A','C','B');
+    scanf("%d",&num
     return 0;
 }
